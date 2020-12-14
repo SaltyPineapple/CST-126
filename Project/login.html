@@ -4,14 +4,10 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
-        <title>Register New User</title>
     </head>
-
     <body>
         
-        <form action="newUser.php" method="post">
-        
+        <form action="loginHandler.php" method="POST">
             <label for="username">Username: </label>
             <input type="text" name="username">
             
@@ -22,21 +18,11 @@
             
             <br>
             
-            <label for="email">Email: </label>
-            <input type="text" name="email">
-            
-            <br>
-            
-            <label for="age">Age: </label>
-            <input type="number" name="age">
+            <input type="submit" value="log in">
         
-            <br>
-            
-            <input type="submit" value="Register">
         </form>
         
-        
-    
+        <a href="index.html">Back Home</a>    
     </body>
-    
+
 </html>

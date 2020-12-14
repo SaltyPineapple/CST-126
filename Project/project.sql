@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Dec 07, 2020 at 05:13 AM
+-- Generation Time: Dec 14, 2020 at 02:52 AM
 -- Server version: 5.7.24
 -- PHP Version: 7.4.1
 
@@ -30,17 +30,20 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `users` (
   `ID` int(11) NOT NULL,
-  `username` varchar(16) NOT NULL,
-  `email` varchar(25) NOT NULL,
-  `age` int(11) NOT NULL
+  `Username` varchar(16) NOT NULL,
+  `Password` varchar(50) NOT NULL,
+  `Email` varchar(25) NOT NULL,
+  `Age` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`ID`, `username`, `email`, `age`) VALUES
-(1, 'markpratt', 'markpratt@markpratt.com', 21);
+INSERT INTO `users` (`ID`, `Username`, `Password`, `Email`, `Age`) VALUES
+(2, 'hello', 'there', 'hello@hello.com', 21),
+(3, 'markjpratt', 'password', 'mark@mark.com', 22),
+(4, 'merk31', 'orange', 'merk@gmail.com', 22);
 
 --
 -- Indexes for dumped tables
@@ -60,7 +63,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
