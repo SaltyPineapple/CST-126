@@ -1,0 +1,18 @@
+When each user is registerred, create their own table to hold their posts
+Table name will be their username since it is unique
+
+
+for date, just insert SELECT GETDATE() into that position
+
+
+SQL for this
+CREATE TABLE $username{
+    Username VARCHAR 16
+    Date VARCHAR
+    Title VARCHAR
+    Post VARCHAR
+    
+}
+
+
+When deleting a user, have to add in drop table function as well

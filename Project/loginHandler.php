@@ -27,10 +27,23 @@
         // check if any rows match user and pass
         if(mysqli_num_rows($result) > 0){
             echo "Log in successful";
+            
+            $row = $result->fetch_assoc();
+            saveUserId($row["Username"]);
+            
+            // reidirects to the post page
+            header("Location: post.php");
         }
         else {
             echo "Login failed";
         }
+        
+    }
+
+    function saveUserID($id){
+        session_start();
+        
+        $_SESSION["$_USERID"] = $id;
         
     }
     
