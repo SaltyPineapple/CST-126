@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Dec 14, 2020 at 02:52 AM
+-- Generation Time: Dec 21, 2020 at 05:33 AM
 -- Server version: 5.7.24
 -- PHP Version: 7.4.1
 
@@ -25,6 +25,77 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `fruitsalad`
+--
+
+CREATE TABLE `fruitsalad` (
+  `ID` int(11) NOT NULL,
+  `Username` varchar(16) NOT NULL,
+  `Date` varchar(10) NOT NULL,
+  `Title` varchar(50) NOT NULL,
+  `Post` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `fruitsalad`
+--
+
+INSERT INTO `fruitsalad` (`ID`, `Username`, `Date`, `Title`, `Post`) VALUES
+(1, 'FruitSalad', '2020-12-20', 'Test Post', 'Hello everyone, this is another test post, but from a different user! How fun!');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `markjpratt`
+--
+
+CREATE TABLE `markjpratt` (
+  `ID` int(11) NOT NULL,
+  `Username` varchar(16) NOT NULL,
+  `Date` varchar(10) NOT NULL,
+  `Title` varchar(50) NOT NULL,
+  `Post` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `markjpratt`
+--
+
+INSERT INTO `markjpratt` (`ID`, `Username`, `Date`, `Title`, `Post`) VALUES
+(1, 'markjpratt', '2020-12-20', '', 'Hello everyone and welcome to my blog! This is my first test post, let me know in the comments!'),
+(2, 'markjpratt', '2020-12-20', 'Second test post', 'Hey guys, I am testing this once again, my last post did not contain the title, which means I need error handling. I should also add a character counter because I have no idea what I am at right now.');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `markmark`
+--
+
+CREATE TABLE `markmark` (
+  `ID` int(11) NOT NULL,
+  `Username` varchar(16) NOT NULL,
+  `Date` varchar(10) NOT NULL,
+  `Title` varchar(50) NOT NULL,
+  `Post` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `orange`
+--
+
+CREATE TABLE `orange` (
+  `ID` int(11) NOT NULL,
+  `Username` varchar(16) NOT NULL,
+  `Date` varchar(10) NOT NULL,
+  `Title` varchar(50) NOT NULL,
+  `Post` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `users`
 --
 
@@ -41,13 +112,38 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`ID`, `Username`, `Password`, `Email`, `Age`) VALUES
-(2, 'hello', 'there', 'hello@hello.com', 21),
-(3, 'markjpratt', 'password', 'mark@mark.com', 22),
-(4, 'merk31', 'orange', 'merk@gmail.com', 22);
+(12, 'markjpratt', 'password', 'mark@mark.com', 22),
+(13, 'markmark', 'markmark', 'markmark', 12),
+(14, 'FruitSalad', 'fruits', 'fruity@fruitysalads.com', 45),
+(18, 'orange', 'favFruits', 'orangey', 4);
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `fruitsalad`
+--
+ALTER TABLE `fruitsalad`
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- Indexes for table `markjpratt`
+--
+ALTER TABLE `markjpratt`
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- Indexes for table `markmark`
+--
+ALTER TABLE `markmark`
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- Indexes for table `orange`
+--
+ALTER TABLE `orange`
+  ADD PRIMARY KEY (`ID`);
 
 --
 -- Indexes for table `users`
@@ -60,10 +156,34 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `fruitsalad`
+--
+ALTER TABLE `fruitsalad`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `markjpratt`
+--
+ALTER TABLE `markjpratt`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `markmark`
+--
+ALTER TABLE `markmark`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `orange`
+--
+ALTER TABLE `orange`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
