@@ -8,7 +8,7 @@
 
     // this will grab the username from the session
     // allows us to use getUserID()
-    require_once("myfuncs.php");
+    require("myfuncs.php");
 
     $username = getUserID();
     $title = $_POST["title"];
@@ -19,12 +19,14 @@
 
     $result = mysqli_query($con, $sql);
 
-    // if the post is successful, take us back to home.
-    // will implement blog viewing pages in future milestone
+    // if the post is successful, take us to the page that displays all the users posts
+
     if($result){
-        echo "post made successfully!";
         
-        echo "<a href='index.html'>Home</a>";
+        // take us to the page that displays the posts
+        header("Location: displayPosts.php");
+
+        
     }
     else {
         echo("Error description: " . mysqli_error($con));
