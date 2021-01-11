@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Dec 21, 2020 at 05:33 AM
+-- Generation Time: Jan 11, 2021 at 03:01 AM
 -- Server version: 5.7.24
 -- PHP Version: 7.4.1
 
@@ -63,7 +63,20 @@ CREATE TABLE `markjpratt` (
 
 INSERT INTO `markjpratt` (`ID`, `Username`, `Date`, `Title`, `Post`) VALUES
 (1, 'markjpratt', '2020-12-20', '', 'Hello everyone and welcome to my blog! This is my first test post, let me know in the comments!'),
-(2, 'markjpratt', '2020-12-20', 'Second test post', 'Hey guys, I am testing this once again, my last post did not contain the title, which means I need error handling. I should also add a character counter because I have no idea what I am at right now.');
+(2, 'markjpratt', '2020-12-20', 'Second test post', 'Hey guys, I am testing this once again, my last post did not contain the title, which means I need error handling. I should also add a character counter because I have no idea what I am at right now.'),
+(3, 'markjpratt', '2021-01-10', 'hello', 'this is my psot'),
+(4, 'markjpratt', '2021-01-10', 'new Post', 'Can I see all of my posts?'),
+(5, 'markjpratt', '2021-01-10', 'new Post', 'Can I see all of my posts?'),
+(6, 'markjpratt', '2021-01-10', 'Test Post', 'I love posting on my blog'),
+(7, 'markjpratt', '2021-01-10', 'another test post', 'here is another test post... lets hope this works'),
+(8, 'markjpratt', '2021-01-10', 'will this work', 'here is another test post... lets hope this works'),
+(9, 'markjpratt', '2021-01-10', 'will this work', 'here is another test post... lets hope this works'),
+(10, 'markjpratt', '2021-01-10', 'will this work', 'here is another test post... lets hope this works'),
+(11, 'markjpratt', '2021-01-10', 'another test', 'test test'),
+(12, 'markjpratt', '2021-01-10', 'test', 'test'),
+(13, 'markjpratt', '2021-01-10', 'test', 'ttest'),
+(14, 'markjpratt', '2021-01-10', 'test', 'ttest'),
+(15, 'markjpratt', '2021-01-10', 'test', 'test');
 
 -- --------------------------------------------------------
 
@@ -165,7 +178,7 @@ ALTER TABLE `fruitsalad`
 -- AUTO_INCREMENT for table `markjpratt`
 --
 ALTER TABLE `markjpratt`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `markmark`
