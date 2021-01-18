@@ -1,11 +1,3 @@
-<!--
-    Mark Pratt
-    CST-126
-    Project Version 5
-    Synopsis: 
-        Handler for when user makes new post
--->
-
 <?php
     
     $con = mysqli_connect('localhost', 'root', 'root', 'project');
@@ -21,9 +13,16 @@
     $username = getUserID();
     $title = $_POST["title"];
     $actualPost = $_POST["actualPost"];
+    $id = $_POST["ID"];
+
 
     // insert post into the table of the user
-    $sql = "INSERT INTO $username (Username, Date, Title, Post) VALUES ('$username', CAST(CURRENT_TIMESTAMP AS DATE),'$title', '$actualPost')";
+    /*$sql = "INSERT INTO $username (Username, Date, Title, Post) VALUES ('$username', CAST(CURRENT_TIMESTAMP AS DATE),'$title', '$actualPost')";*/
+
+    $sql = "UPDATE $username 
+            SET Title='$title', Post='$actualPost', Date=CAST(CURRENT_TIMESTAMP AS DATE) 
+            WHERE ID=$id";
+
 
     $result = mysqli_query($con, $sql);
 

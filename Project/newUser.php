@@ -1,3 +1,12 @@
+<!--
+    Mark Pratt
+    CST-126
+    Project Version 5
+    Synopsis: 
+        Handles new user registration form
+-->
+
+
 <?php
     $con = mysqli_connect('localhost', 'root', 'root', 'project');
 

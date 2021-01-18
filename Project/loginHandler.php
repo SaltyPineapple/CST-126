@@ -1,3 +1,12 @@
+<!--
+    Mark Pratt
+    CST-126
+    Project Version 5
+    Synopsis: 
+        Used to handle log in requests
+
+-->
+
 <?php
     // connection string
     $con = mysqli_connect('localhost', 'root', 'root', 'project');
@@ -32,7 +41,7 @@
             saveUserId($row["Username"]);
             
             // reidirects to the post page
-            header("Location: post.php");
+            header("Location: displayPosts.php");
         }
         else {
             echo "Login failed";

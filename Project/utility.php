@@ -1,3 +1,11 @@
+<!--
+    Mark Pratt
+    CST-126
+    Project Version 5
+    Synopsis: 
+        Holds DBConnect function and get post functions
+-->
+
 <?php
     // connect function
     // used to connect to the database 
@@ -23,11 +31,12 @@
         $users = array();
 
         if(mysqli_num_rows($result) > 0){
+            $index = 0;
 
             while($row = mysqli_fetch_assoc($result)){
                 
                 $users[$index] = array(
-                    $row["Date"], $row["Post"]
+                    $row["Date"], $row["Post"], $row["ID"]
                 );
                 ++$index;
                 
@@ -36,6 +45,8 @@
 
         return $users;
     }
+
+    
 
     
     

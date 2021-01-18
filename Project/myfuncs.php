@@ -1,3 +1,11 @@
+<!--
+    Mark Pratt
+    CST-126
+    Project Version 5
+    Synopsis: 
+        Used for session functions
+-->
+
 <?php
 
     function saveUsername($username){

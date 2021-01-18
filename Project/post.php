@@ -1,3 +1,12 @@
+<!--
+    Mark Pratt
+    CST-126
+    Project Version 5
+    Synopsis: 
+        Page where user creates new post
+
+-->
+
 <!Doctype html>
 <html>
     <head>

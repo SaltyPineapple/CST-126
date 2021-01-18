@@ -3,11 +3,10 @@
     CST-126
     Project Version 5
     Synopsis: 
-        Home page before user logs in or registers
-
+        This page isnt really used at all...
 -->
 
-<!DOCTYPE html>
+<!Doctype html>
 <html>
     <head>
         <!-- Required meta tags -->
@@ -16,19 +15,14 @@
         
         
         <title>CS126 Project</title>
-    
     </head>
     <body>
-        <form action="register.html">
-            <input type="submit" value="Register">
-        </form>
+        <a href="post.php">Make New Post</a>
         <br>
-        <form action="login.html">
-            <input type="submit" value="Login">
-        </form>
-    
-        
-    
+        <a href="displayPosts.php">View Posts</a>
+        <br>
+        <a href="login.html">Log out</a>
     </body>
-    
+
+
 </html>
