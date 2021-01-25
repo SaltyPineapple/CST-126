@@ -8,13 +8,7 @@
 -->
 
 <?php
-    // connection string
-    $con = mysqli_connect('localhost', 'root', 'root', 'project');
-
-    // check if connection is successful
-    if(!$con){
-        die("Database not connected" . mysqli_connect_error);
-    }
+    require('utility.php');
 
     // grab items from POST
     $username = $_POST["username"];
@@ -31,7 +25,7 @@
         // SQL to grab from database
         $sql = "SELECT * FROM users WHERE Username='$username' AND Password='$pass'";
         
-        $result = mysqli_query($con, $sql);
+        $result = mysqli_query(dbCOnnect(), $sql);
         
         // check if any rows match user and pass
         if(mysqli_num_rows($result) > 0){
@@ -58,9 +52,6 @@
         
     }
     
-    
-    // close connection
-    mysqli_close($con);
 
 
 
