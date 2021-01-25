@@ -1,21 +1,17 @@
 <!--
     Mark Pratt
     CST-126
-    Project Version 5
+    Project Version 7
     Synopsis: 
         Handler for when user makes new post
 -->
 
 <?php
-    
-    $con = mysqli_connect('localhost', 'root', 'root', 'project');
-
-    if(!$con){
-        die("Database not connected" . mysqli_connect_error);
-    }       
+        
 
     // this will grab the username from the session
     // allows us to use getUserID()
+    require('utility.php');
     require("myfuncs.php");
 
     $username = getUserID();
@@ -23,9 +19,9 @@
     $actualPost = $_POST["actualPost"];
 
     // insert post into the table of the user
-    $sql = "INSERT INTO $username (Username, Date, Title, Post) VALUES ('$username', CAST(CURRENT_TIMESTAMP AS DATE),'$title', '$actualPost')";
+    $sql = "INSERT INTO Posts (Username, DatePosted, Title, Post, Likes) VALUES ('$username', CAST(CURRENT_TIMESTAMP AS DATE),'$title', '$actualPost', 0)";
 
-    $result = mysqli_query($con, $sql);
+    $result = mysqli_query(dbConnect(), $sql);
 
     // if the post is successful, take us to the page that displays all the users posts
 
@@ -37,10 +33,8 @@
         
     }
     else {
-        echo("Error description: " . mysqli_error($con));
+        echo("Error description:");
     }
 
-    // close connection
-    mysqli_close($con);
 
 ?>

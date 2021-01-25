@@ -3,7 +3,7 @@
     CST-126
     Project Version 5
     Synopsis: 
-        This page isnt really used at all...
+        This is the home screen
 -->
 
 <!Doctype html>
@@ -17,9 +17,11 @@
         <title>CS126 Project</title>
     </head>
     <body>
+        <a href="displayAllPosts.php">View Feed</a>
+        <br>
         <a href="post.php">Make New Post</a>
         <br>
-        <a href="displayPosts.php">View Posts</a>
+        <a href="displayPosts.php">View Your Posts</a>
         <br>
         <a href="login.html">Log out</a>
     </body>

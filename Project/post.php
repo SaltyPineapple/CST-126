@@ -31,6 +31,8 @@
             <input type="submit" value="Create Post">
         
         </form>
+        
+        <a href="home.php">Cancel</a>
     
     </body>
     

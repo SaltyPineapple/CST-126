@@ -1,7 +1,7 @@
 <!--
     Mark Pratt
     CST-126
-    Project Version 5
+    Project Version 7
     Synopsis: 
         Used to handle post deletion requests
 -->
@@ -16,7 +16,7 @@
 
 
 
-    $sql = "DELETE FROM $username WHERE ID = '$id'";
+    $sql = "DELETE FROM Posts WHERE ID = '$id'";
 
     $result = mysqli_query($con, $sql);
 

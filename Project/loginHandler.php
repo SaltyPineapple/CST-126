@@ -1,7 +1,7 @@
 <!--
     Mark Pratt
     CST-126
-    Project Version 5
+    Project Version 7
     Synopsis: 
         Used to handle log in requests
 
@@ -41,10 +41,12 @@
             saveUserId($row["Username"]);
             
             // reidirects to the post page
-            header("Location: displayPosts.php");
+            header("Location: home.php");
         }
         else {
             echo "Login failed";
+            echo "<br>";
+            echo "<a href='login.html'>Try Again</a>";
         }
         
     }

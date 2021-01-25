@@ -2,8 +2,9 @@
 <!--
     Mark Pratt
     CST-126
-    Project Version 5
-    Synopsis: This page is used to edit a post
+    Project Version 7
+    Synopsis: 
+        This page is used to edit a post
 
 -->
 
@@ -17,7 +18,7 @@
     $postArr = array();
     
 
-    $sql = "SELECT * FROM $username where ID = $id";
+    $sql = "SELECT * FROM Posts where ID = $id";
 
     $result = mysqli_query($con, $sql);
 
@@ -47,11 +48,7 @@
         <title>CS126 Project</title>
     </head>
     <body>
-        <form method="post" action="postHandlerEDIT.php">
-            <label for="ID">Post Number: </label>
-            <br>
-            <input type="text" value="<?php echo"".$id;?>" name="ID">
-            <br>
+        <form method="post" action="postHandlerEDIT.php?ID=<?php echo"".$id ?>">
             <label for="title">Title: </label>
             <br>
             <input type="text" name="title" value="<?php echo"".$postArr[0]; ?>">
