@@ -1,0 +1,49 @@
+<!--
+    Mark Pratt
+    CST-126
+    Project Version 5
+    Synopsis: 
+        Form to log in to the blog siteS
+
+-->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- CSS LINK -->
+        <link rel="stylesheet" href="../css/styles.css" type="text/css">
+        
+        <title>CST126 Project</title>
+        
+    </head>
+    <body>
+        <header>
+            <h3>CST-126 Blog Project</h3>
+        </header>
+        
+        <form action="../php/loginHandler.php" method="POST">
+            <label for="username">Username: </label>
+            <input type="text" name="username">
+            
+            <br>
+            
+            <label for="pass">Password: </label>
+            <input type="text" name="pass">
+            
+            <br>
+            
+            <input type="submit" value="log in">
+        
+        </form>
+        
+        <p id="notUser">Not a user?</p>
+        
+        <a href="register.html">Register Here</a>    
+    </body>
+
+</html>

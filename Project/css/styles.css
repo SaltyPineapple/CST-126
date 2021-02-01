@@ -1,0 +1,156 @@
+/*
+<!--
+    Mark Pratt
+    CST-126
+    Project Version 5
+    Synopsis: 
+        CSS File
+-->
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Use gradient with this */
+    --coolblue: #5680e9;
+    --lightblue: #84ceeb;
+    --softblue: #58b9ea;
+    /*--platinum: #c1c8e4;*/
+    --platinum: #edf1ff;
+    --violet: #8860d0;
+    --darkblue: #3b58a1;
+
+}
+
+
+header {
+    background-color: gray;
+    color: white;
+    text-align: left;
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+#logs {
+    margin: auto;
+    padding: 5px;
+}
+
+#notUser {
+    margin: 15px;
+}
+
+/* 
+    ==================
+
+           Forms
+
+    ==================
+*/
+
+input[type=submit]{
+    padding: 10px;
+    background-image: linear-gradient(to right, var(--violet), var(--softblue));
+    color: white;
+    text-decoration: none;
+    text-shadow: .35px .35px #000000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.12), 0 2.5px 2.5px rgba(0,0,0,0.24);
+    border-radius: 3px;
+    
+    transition: all .5s ease-out;
+}
+
+form * {
+    margin: 5px;
+    
+}
+form{
+    margin-bottom: 10px;
+}
+
+
+/* 
+    ===================
+
+     Buttons and Links
+
+    ===================
+*/
+
+a {
+    padding: 10px;
+    background-image: linear-gradient(to right, var(--violet), var(--softblue));
+    color: white;
+    text-decoration: none;
+    text-shadow: .35px .35px #000000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.12), 0 2.5px 2.5px rgba(0,0,0,0.24);
+    border-radius: 3px;
+    
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+    transition: all .5s ease-out;
+}
+
+
+.tableButton{
+    padding: 1px;
+    background-image: none;
+    background-color: orange;
+    
+    transition: all .3s ease-out;
+}
+
+.tableButton:hover {
+    background-color: white;
+    color: orange;
+}
+
+
+/* 
+    ==================
+
+        Table Data
+
+    ==================
+*/
+
+
+td input[type=submit]{
+    width: 100%;
+}
+
+td{
+    height: 100%;
+    padding: 5px;
+}
+
+
+table, tr, th, td{
+    border: 1px solid black;
+    
+}
+
+.date{
+    width: 10% !important;
+    text-align: center;
+}
+
+#postTable{
+    margin: auto;
+    padding: 5px;
+    margin-bottom: 15px;
+}

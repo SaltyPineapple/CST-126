@@ -1,0 +1,36 @@
+<!--
+    Mark Pratt
+    CST-126
+    Project Version 8
+    Synopsis: 
+        My brainstorming file
+-->
+
+When each user is registerred, create their own table to hold their posts
+Table name will be their username since it is unique
+
+
+for date, just insert SELECT GETDATE() into that position
+
+
+SQL for this
+CREATE TABLE $username{
+    Username VARCHAR 16
+    Date VARCHAR
+    Title VARCHAR
+    Post VARCHAR
+    
+}
+
+
+for search and display all.
+
+do display all page first. have search button on page
+
+Search takes us to new page with criteria and then takes us to new page with results
+
+
+
+
+
+

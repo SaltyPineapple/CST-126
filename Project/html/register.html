@@ -1,0 +1,61 @@
+<!--
+    Mark Pratt
+    CST-126
+    Project Version 5
+    Synopsis: 
+        Form for new user registration
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- CSS LINK -->
+        <link rel="stylesheet" href="../css/styles.css" type="text/css">
+        
+        <title>Register New User</title>
+    </head>
+
+    <body>
+        
+        <header>
+            <h3>CST-126 Blog Project</h3>
+        </header>
+        
+        <form action="../php/newUser.php" method="post">
+        
+            <label for="username">Username: </label>
+            <input type="text" name="username">
+            
+            <br>
+            
+            <label for="pass">Password: </label>
+            <input type="text" name="pass">
+            
+            <br>
+            
+            <label for="email">Email: </label>
+            <input type="text" name="email">
+            
+            <br>
+            
+            <label for="age">Age: </label>
+            <input type="number" name="age">
+        
+            <br>
+            
+            <input type="submit" value="Register">
+        </form>
+        
+        <p id="notUser">Already a User?</p>
+        
+        <a href="login.html">Log in Here</a> 
+        
+        
+    
+    </body>
+    
+</html>
